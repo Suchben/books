@@ -14,7 +14,7 @@
   <h1>{{ site.title }}</h1>
   {% for topics in site.topics %}
   <h2>
-      {% assign href = topics.baseurl + topics.url %}
+      {% assign href = site.baseurl + topics.url %}
     <a href="{{ href }}">
       {{ topics.name }} - {{ topics.position }}
     </a>
