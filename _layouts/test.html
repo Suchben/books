@@ -12,7 +12,7 @@
     <a href="/blog/">Blog</a>
   </nav>
   <h1>{{ site.title }}</h1>
-  {% for topics in site.collections.topics %}
+  {% for topics in site.collections %}
   <h2>
     <a href="{{ topics.url }}">
       {{ topics.name }} - {{ topics.position }}
@@ -24,7 +24,7 @@
     {{ content }}
   </section>
   <footer>
-    &copy; to me
+    &copy; to me 2
   </footer>
 </body>
 
