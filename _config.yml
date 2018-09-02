@@ -8,9 +8,7 @@ baseurl: "/books" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  suchben
 collections:
-  posts:
-    output: true
-  topics:
+  _posts:
     output: true
 collections_dir: _collections
 # Build settings
