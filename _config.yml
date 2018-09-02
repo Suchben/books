@@ -11,6 +11,7 @@ collections:
   posts:
     output: true
   topics:
+    output: true
 collections_dir: collections
 # Build settings
 markdown: kramdown
