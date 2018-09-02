@@ -13,8 +13,8 @@
   </nav>
   <h1>{{ site.title }}</h1>
   0{{site.collections}}
-  1{{site.collections.posts}}
-    2{{site.collections.topics}}
+  1{{site.posts}}
+    2{{site.topics}}
   {% for topics in site.collections.topics %}
   <h2>
     <a href="{{ topics.url }}">
