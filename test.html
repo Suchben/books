@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>My First Page</title>
+  <title>{{site.title}}</title>
 </head>
 
 <body>
@@ -12,15 +12,6 @@
     <a href="/blog/">Blog</a>
   </nav>
   <h1>My First Page</h1>
-  <section>
-    This is the content of my page {% for topics in site.posts %}
-    <h2>{{ topics.name }}</h2>
-    <p>{{ topics.content | markdownify }}</p>
-    <a href="{{ topics.url }}">
-      {{ topics.name }}
-    </a>
-    {% endfor %}
-  </section>
   <footer>
     &copy; to me
   </footer>
