@@ -13,11 +13,11 @@
   </nav>
   <h1>My First Page</h1>
   <section>
-    This is the content of my page {% for topics in site.collections %}
-    <h2>{{ topics.name }} - {{ topics.position }}</h2>
+    This is the content of my page {% for topics in site.posts %}
+    <h2>{{ topics.name }}</h2>
     <p>{{ topics.content | markdownify }}</p>
     <a href="{{ topics.url }}">
-      {{ topics.name }} - {{ topics.position }}
+      {{ topics.name }}
     </a>
     {% endfor %}
   </section>
