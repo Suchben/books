@@ -12,12 +12,7 @@
     <a href="/blog/">Blog</a>
   </nav>
   <h1>{{ site.title }}</h1>
-  0{{site.collections}}
-  1{{site.posts}}
-    2{{site.topics}}
-    0{{site.collections[1]}}
-
-  {% for topics in site.collections.topics %}
+  {% for topics in site.topics %}
   <h2>
     <a href="{{ topics.url }}">
       {{ topics.name }} - {{ topics.position }}
