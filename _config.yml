@@ -10,6 +10,7 @@ github_username:  suchben
 collections:
   _posts:
     output: true
+  _topics:
 collections_dir: collections
 # Build settings
 markdown: kramdown
