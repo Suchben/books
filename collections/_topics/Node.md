@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Node
 position: Developer
 ---
