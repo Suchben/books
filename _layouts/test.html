@@ -1,21 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
-  <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/blog/">Blog</a>
-    </nav>
-    <h1>{{ site.title }}</h1>
-    <section>
-      {{ content }}
-    </section>
-    <footer>
-      &copy; to me
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/blog/">Blog</a>
+  </nav>
+  <h1>{{ site.title }}</h1>
+  {% for topics in site.collections.topics %}
+  <h2>
+    <a href="{{ topics.url }}">
+      {{ topics.name }} - {{ topics.position }}
+    </a>
+  </h2>
+  <p>{{ topics.content | markdownify }}</p>
+  {% endfor %}
+  <section>
+    {{ content }}
+  </section>
+  <footer>
+    &copy; to me
+  </footer>
+</body>
+
 </html>
