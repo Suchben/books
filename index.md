@@ -1,7 +1,6 @@
-**首页**
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-###
-
-Hello world 2
-
-[nginx学习笔记](README.md)
+layout: home
+---
