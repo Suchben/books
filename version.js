@@ -1,1 +1,1 @@
-export default ["HEAD -> master, tag: xxx","suchben","2018-09-08 19:13:30","4febbe6231dde9e7ee841a116e4506231d16d4fb"]
+export default ["HEAD -> master","suchben","2018-09-08 19:23:37","cb62058843f90f9721c0b8d05a4c883f1ccbb867"]
